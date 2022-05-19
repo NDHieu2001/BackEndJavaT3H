@@ -597,29 +597,29 @@
                     // });
                 }
             });
-            // $(document).ready(function () {
-            //     $('#search').keyup(function() {
-            //         var keyword = $(this).val();
-            //         $('.product').hide().filter(function() {
-            //             return $(this).text().toLowerCase().search(keyword) != -1;
-            //         }).show();
-            //     });
+            $(document).ready(function () {
+                $('#search').keyup(function() {
+                    var keyword = $(this).val();
+                    $('.product').hide().filter(function() {
+                        return $(this).text().toLowerCase().search(keyword) != -1;
+                    }).show();
+                });
 
-            //     var count = 0;
-            //     var n = 1;
-            //     $('.product').hide().filter(function() {
-            //         if(count <= n*4)
-            //         count++;
-            //         return $(this);
-            //     }).show();
-            //     $('#loadMore').click(function() {
-            //         $('.product').hide().filter(function() {
-            //             if(count <= n*4)
-            //             count++;
-            //             return $(this);
-            //         }).show();
-            //     });
-            // });
+                var count = 0;
+                var n = 1;
+                $('.product').hide().filter(function() {
+                    if(count <= n*4)
+                    count++;
+                    return $(this);
+                }).show();
+                $('#loadMore').click(function() {
+                    $('.product').hide().filter(function() {
+                        if(count <= n*4)
+                        count++;
+                        return $(this);
+                    }).show();
+                });
+            });
         </script>
 
         <hr>
